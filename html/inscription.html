@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nous contacté</title>
+  </head>
+  <body>
+    <header>
+      <img src="../img/1200px-Yu-Gi-Oh!_(Logo).jpg" alt="logo yugioh" />
+    </header>
+    <nav>
+      <ul>
+        <li><a href="mainpage.html">page d'acceuille</a></li>
+        <li><a href="type_de_carte.html">type de carte</a></li>
+        <li><a href="tour.html">comment jouer ?</a></li>
+      </ul>
+    </nav>
+  </body>
+  <section>
+    <h1>voici le formulaire de contact</h1>
+    <form method="post" action="backend/traitement"></form>
+    <label for="name">votre Prénom :</label>
+
+    <input
+      type="text"
+      name="name"
+      id="name"
+      placeholder="Quel est votre nom?"
+      required
+      minlength="2"
+      maxlength="50"
+      required
+    />
+
+    <label for="Lastname">votre Nom :</label>
+    <input
+      type="text"
+      name="Lastname"
+      id="Lastname"
+      placeholder="Quel est votre prénom?"
+      required
+      minlength="2"
+      maxlength="50"
+      required
+    />
+    <br />
+    <br />
+    <label for="password">votre mot de passe</label>
+    <input
+      type="password"
+      name="password"
+      id="password"
+      required
+      placeholder="Quel est votre mot de passe ?"
+      minlength="10"
+    />
+    <br />
+    <br />
+    <label for="email">votre Email</label>
+    <input
+      type="text"
+      name="email"
+      id="email"
+      placeholder="Quel est votre mail?"
+      required
+      minlength="12"
+      maxlength="100"
+      required
+    />
+
+    <br />
+    <br />
+    <label for="age">votre age</label>
+    <input
+      type="number"
+      name="age"
+      id="age"
+      placeholder="Quel est votre age?"
+      required
+      min="10"
+      max="130"
+      required
+    />
+    <br />
+    <br />
+    <input type="radio" name="genre" id="genre" required />
+    <label for="genre">garcon</label>
+    <input type="radio" name="genre" id="genre" />
+    <label for="genre">fille</label>
+    <input type="radio" name="genre" id="genre" />
+    <label for="genre">non-binnaire</label>
+    <input type="radio" name="genre" id="genre" />
+    <label for="genre">autre</label>
+
+    <br />
+    <br />
+    <label for="select">quelle est votre type de carte préféré? </label>
+    <select id="select" required>
+      <option value="1">magie</option>
+      <option value="2">piége</option>
+      <option value="3">monstre</option>
+    </select>
+    <br />
+    <br />
+    <label for="textarea">décrivez votre carte préféré</label>
+    <br />
+    <textarea
+      name="textarea"
+      id="textarea"
+      placeholder="ma carte préféré est..."
+    ></textarea>
+    <br />
+    <button type="submit">validé</button>
+  </section>
+</html>
