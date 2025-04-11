@@ -4,13 +4,15 @@
     <meta charset="UTF-8" />
 
     <title>types de cartes</title>
+    <link rel="shortcut icon" href="../img/dos.jpg" type="image/jpg" />
+    <link rel="stylesheet" href="../css/yugioh.css" />
   </head>
   <body>
     <header>
-      <img src="../img/1200px-Yu-Gi-Oh!_(Logo).jpg" alt="logo yugioh" />
+      <img src="../img/logo.png" alt="logo yugioh" />
     </header>
     <nav>
-      <ul>
+      <ul class="menu">
         <li><a href="mainpage.html">page d'acceuil</a></li>
         <li><a href="tour.html">comment jouer ?</a></li>
         <li><a href="inscription.html">contact</a></li>
@@ -19,255 +21,297 @@
     <section>
       <h1>Les differents types de cartes</h1>
       <article>
-        <div>
-          <h2>Les cartes magie</h2>
-          <p>
-            Il existe 6 types de cartes magie : les cartes magie normales,
-            continues, d'équipement, de terrain, rituel et jeu rapide. Ces
-            cartes se trouvent dans le maindeck.
-          </p>
-          <h3>Les magies normales</h3>
-          <img
-            src="../img/magie_normal.jpg"
-            alt="carte magie sans symbole"
-            width="200"
-          />
-          <p>
-            Les cartes magie normales sont des cartes magie que vous pouvez
-            jouer durant votre tour. Après leur utilisation, elles vont au
-            cimetière.
-          </p>
-          <h3>Les magies continues</h3>
-          <img
-            src="../img/magie_continue.jpg"
-            alt="carte magie avec le symbole infini"
-            width="200"
-          />
-          <p>
-            Ce sont des cartes que vous pouvez jouer durant votre tour. Elles
-            restent sur le terrain. <br />
+        <h2>Les cartes magie</h2>
+        <p>
+          Il existe 6 types de cartes magie : les cartes magie normales,
+          continues, d'équipement, de terrain, rituel et jeu rapide. Ces cartes
+          se trouvent dans le maindeck.
+        </p>
+        <div class="magie">
+          <div class="carte_magie">
+            <h3>Les magies normales</h3>
+            <img
+              src="../img/magie_normal.jpg"
+              alt="carte magie sans symbole"
+              width="200"
+            />
+            <p>
+              Les cartes magie normales sont des cartes magie que vous pouvez
+              jouer durant votre tour. Après leur utilisation, elles vont au
+              cimetière.
+            </p>
+          </div>
+          <div class="carte_magie">
+            <h3>Les magies continues</h3>
+            <img
+              src="../img/magie_continue.jpg"
+              alt="carte magie avec le symbole infini"
+              width="200"
+            />
+            <p>
+              Ce sont des cartes que vous pouvez jouer durant votre tour. Elles
+              restent sur le terrain. <br />
+              On les reconnait grace au symbole :
+              <img
+                src="../img/symbole-magie-continue.png"
+                alt="symbole imfini"
+                width="20"
+              />
+            </p>
+          </div>
+          <div class="carte_magie">
+            <h3>Les magies d'équippement</h3>
+            <img
+              src="../img/magie_d'equipement.jpg"
+              alt="carte magie d'equipement"
+              width="200"
+            />
+            <p>
+              Ce sont les cartes qui s'equipent à des personnages pour leur
+              conférer des bonus.<br />
+              On les reconnait grace au symbole :
+              <img
+                src="../img/symbole-magie-equippement.png"
+                alt="symbole de croix"
+                width="20"
+              />
+            </p>
+          </div>
+          <div class="carte_magie">
+            <h3>Les magies rituel</h3>
+            <img
+              src="../img/magie_rituel.png"
+              alt="carte magie de rituel"
+              width="200"
+            />
+            <p>
+              Elles servent à invoquer des personnages de type rituel. <br />
+              On les reconnait grace au symbole :
+              <img
+                src="../img/symbole-magie-rituelle.png"
+                alt="symbole de croix"
+                width="20"
+              />
+            </p>
+          </div>
+          <div class="carte_magie">
+            <h3>Les magies de terrain</h3>
+            <img
+              src="../img/magie_de_terrain.jpg"
+              alt="carte magie de terrain"
+              width="200"
+            />
+            <p>
+              Ce sont des cartes qui possèdent leur propre zone:"la zone
+              terrain". Chaque joueur ne peut en controller qu'une, mais chaque
+              joueur peut sacrifier son terrain pour en jouer un nouveau.
+              <br />
+              On les reconnait grace au symbole :
+              <img
+                src="../img/symbole-magie-terrain.png"
+                alt="symbole de X"
+                width="20"
+              />
+            </p>
+          </div>
+          <div class="carte_magie">
+            <h3>Les magies jeu rapide</h3>
+            <img
+              src="../img/magie_rapide.webp"
+              alt="carte magie rapide"
+              width="200"
+            />
+            <p>
+              Il sagit de cartes magie qui peuvent soit être jouées durant votre
+              tour soit étre posées pour être jouées durant le tour de votre
+              adversaire.
+              <br />
+              On les reconnait grace au symbole :
+              <img
+                src="../img/symbole-magie-rapide.png"
+                alt="symbole de foudre"
+                width="20"
+              />
+            </p>
+          </div>
+        </div>
+        <h2>Les cartes piege</h2>
+        <p>
+          Il existe 3 types de cartes piège : les cartes piège normal, continue
+          et contre piege. Ces cartes se trouvent dans le maindeck.
+        </p>
+        <div class="piege">
+          <div class="carte_piege">
+            <h3>Les pièges normaux</h3>
+            <img src="../img/piege.jpg" alt="carte piege normal" width="200" />
+            <p>
+              Les carte piège doivent être posées durant votre tour pour pouvoir
+              être activées durant le tour de votre adversaire.
+            </p>
+          </div>
+          <div class="carte_piege">
+            <h3>Les pièges continus</h3>
+            <img
+              src="../img/piege_continu.jpg"
+              alt="carte piege continu"
+              width="200"
+            />
+            <p>
+              Les cartes piège doivent étre posées durant votre tour pour
+              pouvoir être activées durant le tour de votre adversaire, mais,
+              comme les magies continues, elles restent sur le terrain.
+            </p>
+            <br />
             On les reconnait grace au symbole :
             <img
               src="../img/symbole-magie-continue.png"
-              alt="symbole imfini"
+              alt="symbole de l'infini"
               width="20"
             />
-          </p>
-          <h3>Les magies d'équippement</h3>
-          <img
-            src="../img/magie_d'equipement.jpg"
-            alt="carte magie d'equipement"
-            width="200"
-          />
-          <p>
-            Ce sont les cartes qui s'equipent à des personnages pour leur
-            conférer des bonus.<br />
-            On les reconnait grace au symbole :
+          </div>
+          <div class="carte_piege">
+            <h3>Les contre-pièges</h3>
             <img
-              src="../img/symbole-magie-equippement.png"
-              alt="symbole de croix"
-              width="20"
+              src="../img/contre-piege.jpg"
+              alt="carte contre-piege "
+              width="200"
             />
-          </p>
-          <h3>Les magies rituel</h3>
-          <img
-            src="../img/magie_rituel.png"
-            alt="carte magie de rituel"
-            width="200"
-          />
-          <p>
-            Elles servent à invoquer des personnages de type rituel. <br />
-            On les reconnait grace au symbole :
-            <img
-              src="../img/symbole-magie-rituelle.png"
-              alt="symbole de croix"
-              width="20"
-            />
-          </p>
-          <h3>Les magies de terrain</h3>
-          <img
-            src="../img/magie_de_terrain.jpg"
-            alt="carte magie de terrain"
-            width="200"
-          />
-          <p>
-            Ce sont des cartes qui possèdent leur propre zone:"la zone terrain".
-            Chaque joueur ne peut en controller qu'une, mais chaque joueur peut
-            sacrifier son terrain pour en jouer un nouveau.
+            <p>
+              Les cartes piège doivent étre posées durant votre tour pour
+              pouvoir être activées durant le tour de votre adversaire. Elles
+              servent généralement a annuler une action de votre adversaire.
+            </p>
             <br />
             On les reconnait grace au symbole :
             <img
-              src="../img/symbole-magie-terrain.png"
-              alt="symbole de X"
+              src="../img/symbole-contre-piege.png"
+              alt="symbole de fleche"
               width="20"
             />
-          </p>
-          <h3>Les magies jeu rapide</h3>
-          <img
-            src="../img/magie_rapide.webp"
-            alt="carte magie rapide"
-            width="200"
-          />
-          <p>
-            Il sagit de cartes magie qui peuvent soit être jouées durant votre
-            tour soit étre posées pour être jouées durant le tour de votre
-            adversaire.
-            <br />
-            On les reconnait grace au symbole :
+          </div>
+        </div>
+
+        <h2>Les cartes monstres</h2>
+        <p>
+          Les cartes monstre sont les différents personnages. <br />
+          Il existe 7 types de cartes monstre : les cartes monstre normal, à
+          effect et rituel, pour le maindeck, fusion, synchro, xyz, et lien,
+          pour l'extra deck.
+        </p>
+        <div class="monstre">
+          <div class="carte_monstre">
+            <h3>Les monstres normaux</h3>
             <img
-              src="../img/symbole-magie-rapide.png"
-              alt="symbole de foudre"
-              width="20"
+              src="../img/normal.jpg"
+              alt="carte monstre normal"
+              width="200"
             />
-          </p>
-        </div>
-        <div>
-          <h2>Les cartes piege</h2>
-          <p>
-            Il existe 3 types de cartes piège : les cartes piège normal,
-            continue et contre piege. Ces cartes se trouvent dans le maindeck.
-          </p>
-          <h3>Les pièges normaux</h3>
-          <img src="../img/piege.jpg" alt="carte piege normal" width="200" />
-          <p>
-            Les carte piège doivent être posées durant votre tour pour pouvoir
-            être activées durant le tour de votre adversaire.
-          </p>
-          <h3>Les pièges continus</h3>
-          <img
-            src="../img/piege_continu.jpg"
-            alt="carte piege continu"
-            width="200"
-          />
-          <p>
-            Les cartes piège doivent étre posées durant votre tour pour pouvoir
-            être activées durant le tour de votre adversaire, mais, comme les
-            magies continues, elles restent sur le terrain.
-          </p>
-          <br />
-          On les reconnait grace au symbole :
-          <img
-            src="../img/symbole-magie-continue.png"
-            alt="symbole de l'infini"
-            width="20"
-          />
-          <h3>Les contre-pièges</h3>
-          <img
-            src="../img/contre-piege.jpg"
-            alt="carte contre-piege "
-            width="200"
-          />
-          <p>
-            Les cartes piège doivent étre posées durant votre tour pour pouvoir
-            être activées durant le tour de votre adversaire. Elles servent
-            généralement a annuler une action de votre adversaire.
-          </p>
-          <br />
-          On les reconnait grace au symbole :
-          <img
-            src="../img/symbole-contre-piege.png"
-            alt="symbole de fleche"
-            width="20"
-          />
-        </div>
-        <div>
-          <h2>Les cartes monstres</h2>
-          <p>
-            Les cartes monstre sont les différents personnages. <br />
-            Il existe 7 types de cartes monstre : les cartes monstre normal, à
-            effect et rituel, pour le maindeck, fusion, synchro, xyz, et lien,
-            pour l'extra deck.
-          </p>
-
-          <h3>Les monstres normaux</h3>
-          <img src="../img/normal.jpg" alt="carte monstre normal" width="200" />
-          <p>
-            Ce sont les monstres sans effet. Les cartes sont de couleur beiges.
-          </p>
-
-          <h3>Les monstres à effet</h3>
-          <img
-            src="../img/effect.png"
-            alt="carte monstre à effect"
-            width="200"
-          />
-          <p>
-            Ce sont les monstres qui ont des effet. Les cartes sont de couleur
-            brune.
-          </p>
-
-          <h3>Les monstres rituel</h3>
-          <img
-            src="../img/rituel.webp"
-            alt="carte monstre rituel "
-            width="200"
-          />
-          <p>
-            Ce sont les monstres qui s'invoquent grace aux magies rituel. Les
-            cartes sont de couleur bleue.
-          </p>
-          <p>Pour plus de détails :</p>
-
-          <video controls width="250">
-            <source src="../video/rituel.mp4" type="video/mp4" />
-          </video>
-          <p>crédit: Joeri Sama</p>
-
-          <h3>Les monstres fusion</h3>
-          <img src="../img/fusion.jpg" alt="carte monstre fusion" width="200" />
-          <p>
-            Ce sont des monstres de l'extra deck pouvant être invoqués en
-            fusionnant d'autres monstres. Les cartes sont de couleur mauve.
-          </p>
-          <p>Pour plus de détails :</p>
-
-          <video controls width="250">
-            <source src="../video/fusion.mp4" type="video/mp4" />
-          </video>
-          <p>crédit: Joeri Sama</p>
-
-          <h3>Les monstres synchro</h3>
-          <img
-            src="../img/synchro.jpg"
-            alt="carte monstre synchro"
-            width="200"
-          />
-          <p>
-            Ce sont des monstres de l'extra deck qui s'invoquent en additionnant
-            le niveau d'étoile des monstres. Les cartes sont de couleur blanche.
-          </p>
-          <p>Pour plus de détails :</p>
-
-          <video controls width="250">
-            <source src="../video/synchro.mp4" type="video/mp4" />
-          </video>
-          <p>crédit: Joeri Sama</p>
-
-          <h3>Les monstres XYZ</h3>
-          <img src="../img/xyz.png" alt="carte monstre xyz" width="200" />
-          <p>
-            Ce sont des monstres de l'extra deck qui s'invoquent en utilisant
-            plusieurs monstres qui ont le même nombre d'étoiles. Les cartes sont
-            de couleur noire.
-          </p>
-          <p>Pour plus de détails :</p>
-
-          <video controls width="250">
-            <source src="../video/xyz.mp4" type="video/mp4" />
-          </video>
-          <p>crédit: Joeri Sama</p>
-          <h3>Les monstres lien</h3>
-          <img src="../img/lien.png" alt="carte monstre lien" width="200" />
-          <p>
-            Ce sont des monstres de l'extra deck qui s'invoquent en utilisant un
-            nombre de monstres précis.
-          </p>
-          <p>Pour plus de détails :</p>
-
-          <video controls width="250">
-            <source src="../video/lien.mp4" type="video/mp4" />
-          </video>
-          <p>crédit: Joeri Sama</p>
+            <p>
+              Ce sont les monstres sans effet. Les cartes sont de couleur
+              beiges.
+            </p>
+          </div>
+          <div class="carte_monstre">
+            <h3>Les monstres à effet</h3>
+            <img
+              src="../img/effect.png"
+              alt="carte monstre à effect"
+              width="200"
+            />
+            <p>
+              Ce sont les monstres qui ont des effet. Les cartes sont de couleur
+              brune.
+            </p>
+          </div>
+          <div class="carte_monstre">
+            <h3>Les monstres rituel</h3>
+            <img
+              src="../img/rituel.webp"
+              alt="carte monstre rituel "
+              width="200"
+            />
+            <p>
+              Ce sont les monstres qui s'invoquent grace aux magies rituel. Les
+              cartes sont de couleur bleue.
+            </p>
+          </div>
+          <div class="carte_monstre">
+            <h3>vidéo sur les monstre rituel</h3>
+            <video controls width="350">
+              <source src="../video/rituel.mp4" type="video/mp4" />
+            </video>
+            <p>crédit: Joeri Sama</p>
+          </div>
+          <div class="carte_monstre">
+            <h3>Les monstres fusion</h3>
+            <img
+              src="../img/fusion.jpg"
+              alt="carte monstre fusion"
+              width="200"
+            />
+            <p>
+              Ce sont des monstres de l'extra deck pouvant être invoqués en
+              fusionnant d'autres monstres. Les cartes sont de couleur mauve.
+            </p>
+          </div>
+          <div class="carte_monstre">
+            <h3>vidéo sur les monstre fusion</h3>
+            <video controls width="350">
+              <source src="../video/fusion.mp4" type="video/mp4" />
+            </video>
+            <p>crédit: Joeri Sama</p>
+          </div>
+          <div class="carte_monstre">
+            <h3>Les monstres synchro</h3>
+            <img
+              src="../img/synchro.jpg"
+              alt="carte monstre synchro"
+              width="200"
+            />
+            <p>
+              Ce sont des monstres de l'extra deck qui s'invoquent en
+              additionnant le niveau d'étoile des monstres. Les cartes sont de
+              couleur blanche.
+            </p>
+          </div>
+          <div class="carte_monstre">
+            <h3>vidéo sur les monstre synchro</h3>
+            <video controls width="350">
+              <source src="../video/synchro.mp4" type="video/mp4" />
+            </video>
+            <p>crédit: Joeri Sama</p>
+          </div>
+          <div class="carte_monstre">
+            <h3>Les monstres XYZ</h3>
+            <img src="../img/xyz.png" alt="carte monstre xyz" width="200" />
+            <p>
+              Ce sont des monstres de l'extra deck qui s'invoquent en utilisant
+              plusieurs monstres qui ont le même nombre d'étoiles. Les cartes
+              sont de couleur noire.
+            </p>
+          </div>
+          <div class="carte_monstre">
+            <h3>vidéo sur les monstre xyz</h3>
+            <video controls width="350">
+              <source src="../video/xyz.mp4" type="video/mp4" />
+            </video>
+            <p>crédit: Joeri Sama</p>
+          </div>
+          <div class="carte_monstre">
+            <h3>Les monstres lien</h3>
+            <img src="../img/lien.png" alt="carte monstre lien" width="200" />
+            <p>
+              Ce sont des monstres de l'extra deck qui s'invoquent en utilisant
+              un nombre de monstres précis.
+            </p>
+          </div>
+          <div class="carte_monstre">
+            <h3>vidéo sur les monstre lien</h3>
+            <video controls width="350">
+              <source src="../video/lien.mp4" type="video/mp4" />
+            </video>
+            <p>crédit: Joeri Sama</p>
+          </div>
         </div>
       </article>
     </section>
