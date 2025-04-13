@@ -1,0 +1,39 @@
+@media  screen and (max-width: 600px){
+    
+    ul.menu {
+        
+        display: flex;
+       flex-direction: column;
+        
+       
+    }
+    ul.menu li{
+        display: flex; 
+        margin-bottom: 5px;
+    }
+    img{
+        max-width: 80%;
+        
+    }
+    div.carte_magie ,div.carte_piege,div.carte_monstre{
+        display: flex;
+        flex-direction: column;
+        max-width: 80%;
+        margin-left: 10%;
+        min-width: 80%;
+    }
+    div.magie, div.piege,div.monstre{
+        display: flex;
+        
+    }
+    video{
+        min-width: 85%;
+    }
+    h1.img{
+        
+        min-width: 70%;
+    }
+ 
+    
+  
+}
