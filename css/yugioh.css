@@ -3,8 +3,9 @@
 
 
 body{
-    background-color:#ffad50;
+    background-color:#fcb15b;
     margin: 0%;
+    padding: 0%;
     
     
 }
@@ -12,6 +13,10 @@ img, audio{
     max-width: 45%;
     
 }
+p, li{
+    color: rgb(2, 2, 109);
+}
+
 header img{
     
     margin-left: 15%;
@@ -19,23 +24,34 @@ header img{
     max-width: 70%;
     display: flex;
     justify-content: right;
+    
 }
 
+
 ul.menu {
-    padding-top: 2px;
-    padding-bottom: 2px;
+    
     display: flex;
     justify-content: space-around;
     
     background-color:#f3464667;
+    border: 1px solid #4c494967;
+    
+    
 }
+
+
+
 ul.menu li{
     display: inline-flex; 
 }
+
 h1,h2,h3,h4{
     
     color: #4F0341;
+    font-weight: bolder;
+    
 }
+
 div.carte_magie ,div.carte_piege,div.carte_monstre{
     display: flex;
     flex-direction: column;
@@ -48,6 +64,7 @@ div.magie, div.piege,div.monstre{
     flex-wrap: wrap;
 }
 footer{
+    border-top: 3px solid #ffaa00;
    background-color: #fff29e;
    padding: 10px;
    
@@ -56,3 +73,4 @@ video{
     max-width: 60%;
     min-width: 60%;
 }
+
