@@ -15,12 +15,12 @@
     </header>
     <nav>
       <ul class="menu">
-        <li><a href="index.html">page d'acceuil</a></li>
-        <li><a href="tour.html">comment jouer ?</a></li>
-        <li><a href="inscription.html">contact</a></li>
+        <li><a href="index.html" class="p1">page d'acceuil</a></li>
+        <li><a href="tour.html" class="p3">comment jouer ?</a></li>
+        <li><a href="inscription.html" class="p4">contact</a></li>
       </ul>
     </nav>
-    <section>
+    <section class="carte">
       <h1>Les differents types de cartes</h1>
       <article>
         <h2>Les cartes magie</h2>
@@ -36,6 +36,7 @@
               src="../img/magie_normal.jpg"
               alt="carte magie sans symbole"
               width="200"
+              class="card"
             />
             <p>
               Les cartes magie normales sont des cartes magie que vous pouvez
@@ -49,6 +50,7 @@
               src="../img/magie_continue.jpg"
               alt="carte magie avec le symbole infini"
               width="200"
+              class="card"
             />
             <p>
               Ce sont des cartes que vous pouvez jouer durant votre tour. Elles
@@ -67,6 +69,7 @@
               src="../img/magie_d'equipement.jpg"
               alt="carte magie d'equipement"
               width="200"
+              class="card"
             />
             <p>
               Ce sont les cartes qui s'equipent à des personnages pour leur
@@ -85,6 +88,7 @@
               src="../img/magie_rituel.png"
               alt="carte magie de rituel"
               width="200"
+              class="card"
             />
             <p>
               Elles servent à invoquer des personnages de type rituel. <br />
@@ -102,6 +106,7 @@
               src="../img/magie_de_terrain.jpg"
               alt="carte magie de terrain"
               width="200"
+              class="card"
             />
             <p>
               Ce sont des cartes qui possèdent leur propre zone:"la zone
@@ -122,6 +127,7 @@
               src="../img/magie_rapide.webp"
               alt="carte magie rapide"
               width="200"
+              class="card"
             />
             <p>
               Il sagit de cartes magie qui peuvent soit être jouées durant votre
@@ -145,7 +151,12 @@
         <div class="piege">
           <div class="carte_piege">
             <h3>Les pièges normaux</h3>
-            <img src="../img/piege.jpg" alt="carte piege normal" width="200" />
+            <img
+              src="../img/piege.jpg"
+              alt="carte piege normal"
+              width="200"
+              class="card"
+            />
             <p>
               Les carte piège doivent être posées durant votre tour pour pouvoir
               être activées durant le tour de votre adversaire.
@@ -157,19 +168,21 @@
               src="../img/piege_continu.jpg"
               alt="carte piege continu"
               width="200"
+              class="card"
             />
             <p>
               Les cartes piège doivent étre posées durant votre tour pour
               pouvoir être activées durant le tour de votre adversaire, mais,
               comme les magies continues, elles restent sur le terrain.
+
+              <br />
+              On les reconnait grace au symbole :
+              <img
+                src="../img/symbole-magie-continue.png"
+                alt="symbole de l'infini"
+                width="20"
+              />
             </p>
-            <br />
-            On les reconnait grace au symbole :
-            <img
-              src="../img/symbole-magie-continue.png"
-              alt="symbole de l'infini"
-              width="20"
-            />
           </div>
           <div class="carte_piege">
             <h3>Les contre-pièges</h3>
@@ -177,19 +190,21 @@
               src="../img/contre-piege.jpg"
               alt="carte contre-piege "
               width="200"
+              class="card"
             />
             <p>
               Les cartes piège doivent étre posées durant votre tour pour
               pouvoir être activées durant le tour de votre adversaire. Elles
               servent généralement a annuler une action de votre adversaire.
+
+              <br />
+              On les reconnait grace au symbole :
+              <img
+                src="../img/symbole-contre-piege.png"
+                alt="symbole de fleche"
+                width="20"
+              />
             </p>
-            <br />
-            On les reconnait grace au symbole :
-            <img
-              src="../img/symbole-contre-piege.png"
-              alt="symbole de fleche"
-              width="20"
-            />
           </div>
         </div>
 
@@ -207,6 +222,7 @@
               src="../img/normal.jpg"
               alt="carte monstre normal"
               width="200"
+              class="card"
             />
             <p>
               Ce sont les monstres sans effet. Les cartes sont de couleur
@@ -219,6 +235,7 @@
               src="../img/effect.png"
               alt="carte monstre à effect"
               width="200"
+              class="card"
             />
             <p>
               Ce sont les monstres qui ont des effet. Les cartes sont de couleur
@@ -231,6 +248,7 @@
               src="../img/rituel.webp"
               alt="carte monstre rituel "
               width="200"
+              class="card"
             />
             <p>
               Ce sont les monstres qui s'invoquent grace aux magies rituel. Les
@@ -250,6 +268,7 @@
               src="../img/fusion.jpg"
               alt="carte monstre fusion"
               width="200"
+              class="card"
             />
             <p>
               Ce sont des monstres de l'extra deck pouvant être invoqués en
@@ -269,6 +288,7 @@
               src="../img/synchro.jpg"
               alt="carte monstre synchro"
               width="200"
+              class="card"
             />
             <p>
               Ce sont des monstres de l'extra deck qui s'invoquent en
@@ -285,7 +305,12 @@
           </div>
           <div class="carte_monstre">
             <h3>Les monstres XYZ</h3>
-            <img src="../img/xyz.png" alt="carte monstre xyz" width="200" />
+            <img
+              src="../img/xyz.png"
+              alt="carte monstre xyz"
+              width="200"
+              class="card"
+            />
             <p>
               Ce sont des monstres de l'extra deck qui s'invoquent en utilisant
               plusieurs monstres qui ont le même nombre d'étoiles. Les cartes
@@ -301,7 +326,12 @@
           </div>
           <div class="carte_monstre">
             <h3>Les monstres lien</h3>
-            <img src="../img/lien.png" alt="carte monstre lien" width="200" />
+            <img
+              src="../img/lien.png"
+              alt="carte monstre lien"
+              width="200"
+              class="card"
+            />
             <p>
               Ce sont des monstres de l'extra deck qui s'invoquent en utilisant
               un nombre de monstres précis.
@@ -319,7 +349,9 @@
     </section>
     <footer>
       <br />
-      <a href="https://www.yugioh-card.com/eu/fr/lien"> site yugioh officiel</a>
+      <a href="https://www.yugioh-card.com/eu/fr/lien" class="siteOff">
+        site yugioh officiel</a
+      >
       <p>
         contact : <br />
         tel : 0499503412 <br />email: blabla@gmail.com

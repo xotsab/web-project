@@ -3,28 +3,37 @@
 
 
 body{
-    background-color:#fcb15b;
+    grid-template-rows: auto 1fr auto;
     margin: 0%;
-    padding: 0%;
-    
-    
+    padding: 0%; 
 }
-img, audio{
-    max-width: 45%;
-    
+body{
+    background-image: url(../img/fond.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
+section{
+    text-align: center;
+}
+
 p, li{
-    color: rgb(2, 2, 109);
+    color: rgb(255, 255, 255);  
 }
 
 header img{
     
-    margin-left: 15%;
+    
+    opacity: 0.75;
+    margin-left: 19%;
     
     max-width: 70%;
     display: flex;
-    justify-content: right;
-    
+}
+img.tapis{
+    opacity: 0.9;
 }
 
 
@@ -47,8 +56,9 @@ ul.menu li{
 
 h1,h2,h3,h4{
     
-    color: #4F0341;
+    color: #ffffff;
     font-weight: bolder;
+    
     
 }
 
@@ -58,19 +68,63 @@ div.carte_magie ,div.carte_piege,div.carte_monstre{
     max-width: 45%;
     margin: 2%;
     min-width: 45%;
+   
+    
+   
 }
-div.magie, div.piege,div.monstre{
+
+div.magie, div.piege,div.monstre {
     display: flex;
     flex-wrap: wrap;
+     justify-content: center;
 }
+ 
 footer{
-    border-top: 3px solid #ffaa00;
-   background-color: #fff29e;
+    border-top: 3px solid #595857;
+   background-color: #2d3dee91;
+
    padding: 10px;
    
+   
+}
+footer p{
+    color: #ffffff;
 }
 video{
     max-width: 60%;
     min-width: 60%;
 }
+
+a.siteOff,a.p1,a.p2,a.p3,a.p4{
+    color: #8fff05;
+    font-weight:bold;
+    
+    
+}
+section.formulaire{
+    display:flex;
+    
+    flex-direction: column;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+img, audio{
+    max-width: 45%;  
+}
+img.card, video{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+    
+
 

@@ -21,9 +21,11 @@
         max-width: 80%;
         margin-left: 10%;
         min-width: 80%;
+       
     }
     div.magie, div.piege,div.monstre{
         display: flex;
+         justify-content: center;
         
     }
     video{
@@ -36,6 +38,7 @@
     p,h1,h2,h3,h4{
         font-size:larger ;
     }
+   
  
     
   
