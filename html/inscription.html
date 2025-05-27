@@ -11,15 +11,26 @@
   </head>
   <body>
     <header>
-      <img src="../img/logo.png" alt="logo yugioh" />
+      <nav class="navbar">
+        <div class="nav-links">
+          <ul class="menu">
+            <li><a href="index.html" class="p1">page d'acceuil</a></li>
+            <li><a href="type_de_carte.html" class="p2">type_de_carte</a></li>
+            <li><a href="tour.html" class="p3">comment jouer ?</a></li>
+          </ul>
+        </div>
+        <img src="../img/menu.webp" alt="menu" class="menu-img" />
+      </nav>
+      <script>
+        const menuHamburger = document.querySelector(".menu-img");
+        const navLinks = document.querySelector(".nav-links");
+
+        menuHamburger.addEventListener("click", () => {
+          navLinks.classList.toggle("mobile-menu");
+        });
+      </script>
+      <img src="../img/logo.png" alt="logo yugioh" class="logoyugioh" />
     </header>
-    <nav>
-      <ul class="menu">
-        <li><a href="index.html" class="p1">page d'acceuil</a></li>
-        <li><a href="type_de_carte.html" class="p2">types de cartes</a></li>
-        <li><a href="tour.html" class="p3">comment jouer ?</a></li>
-      </ul>
-    </nav>
 
     <section class="formulaire">
       <h1>Inscription à la news-letter</h1>
@@ -98,6 +109,8 @@
       <textarea
         name="textarea"
         id="textarea"
+        rows="4"
+        cols="50"
         placeholder="Ma carte préférée est..."
       ></textarea>
 

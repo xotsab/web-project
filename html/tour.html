@@ -11,17 +11,30 @@
   </head>
   <body>
     <header>
-      <img src="../img/logo.png" alt="logo yugioh" />
+      <nav class="navbar">
+        <div class="nav-links">
+          <ul class="menu">
+            <li><a href="index.html" class="p1">page d'acceuil</a></li>
+            <li><a href="type_de_carte.html" class="p2">type_de_carte</a></li>
+
+            <li><a href="inscription.html" class="p4">contact</a></li>
+          </ul>
+        </div>
+        <img src="../img/menu.webp" alt="menu" class="menu-img" />
+      </nav>
+      <script>
+        const menuHamburger = document.querySelector(".menu-img");
+        const navLinks = document.querySelector(".nav-links");
+
+        menuHamburger.addEventListener("click", () => {
+          navLinks.classList.toggle("mobile-menu");
+        });
+      </script>
+      <img src="../img/logo.png" alt="logo yugioh" class="logoyugioh" />
     </header>
-    <nav>
-      <ul class="menu">
-        <li><a href="index.html" class="p1">page d'acceuil</a></li>
-        <li><a href="type_de_carte.html" class="p2">types de cartes</a></li>
-        <li><a href="inscription.html" class="p4">contact</a></li>
-      </ul>
-    </nav>
-    <h1>Le jeu</h1>
+
     <section>
+      <h1>Le jeu</h1>
       <h2>Les régles de base</h2>
       <p>
         Durant une partie de yugioh, chaque joueur commence avec 5 cartes en
@@ -32,14 +45,14 @@
       </p>
 
       <h2>Les différentes phases</h2>
-      <ol>
+      <ul>
         <li>La draw phase</li>
         <li>La standby phase</li>
         <li>La main phase 1</li>
         <li>La battle phase</li>
         <li>La main phase 2</li>
         <li>La end phase</li>
-      </ol>
+      </ul>
       <h3>La draw phase</h3>
       <p>
         Durant cette phase, le joueur du tour pioche une carte, sauf durant le
