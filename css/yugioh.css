@@ -15,7 +15,7 @@ body{
     background-size: cover;
 
 }
-p{
+p, footer a{
     margin: 0 20%;
 }
 section{
@@ -24,7 +24,7 @@ section{
 p,label,li{
     font-size: 1.25em;
 }
-h2,h3,h4{
+h2,h3,h4,footer a{
     font-size: 1.4em;
 }
 h1{
@@ -112,24 +112,22 @@ div.magie, div.piege,div.monstre {
 }
  
 footer{
-    
+    position: relative;
     border-top: 3px solid #595857;
    background-color: #2d3dee91;
 
    padding: 10px;
-   
-   
 }
 footer p{
     color: #ffffff;
 }
 video{
     max-width: 60%;
-    min-width: 60%;
+    min-width: 60%;  
 }
 
 a.siteOff,a.p1,a.p2,a.p3,a.p4{
-    color: #8fff05;
+    color: #a4d9ff;
     font-weight:bold;
     
     
@@ -140,6 +138,9 @@ section.formulaire{
     flex-direction: column;
     margin-left: 20%;
     margin-right: 20%;
+}
+.formulaire div{
+    margin: 10px;
 }
 img, audio{
     max-width: 45%;  
@@ -157,7 +158,89 @@ img.card, video{
     font-size: 1.5em;
 }
 
+section.formulaire{
+    background-color: #58058b80;
+    border-radius: 20px;
+    padding: 5%;
+    border: 3px solid #210098;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.formulaire p{
+    margin-bottom: 20px;
+}
+.formulaire div input,.formulaire div select,.formulaire div.description textarea{
+   width: 100%;
+    border-radius: 15px;
+    outline: none;
+    background-color: transparent;
+    border: 3px solid rgba(47, 165, 255, 0.925);
+     color: #21fef3;
+text-shadow: -1px -1px 0 #000000,1px -1px 0 #000000,-1px 1px 0 #000000,1px 1px 0 #000000;
+}
+.formulaire div input::placeholder,.formulaire div.description textarea::placeholder {
+    color: #21fef3;
+    text-shadow: -1px -1px 0 #000000,1px -1px 0 #000000,-1px 1px 0 #000000,1px 1px 0 #000000;
+}
+.formulaire div.genre{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.formulaire div.genre label.question{
+   
+   width: 100%;
+   margin-bottom: 10px;
+}
+.formulaire div.genre label.reponse{
+   
+   margin-right: 35%;
+   
+}
+.formulaire div.genre input.reponse{
+    width: 5%;
+    margin-left: 40%;
+    
+}
 
+.formulaire div select option{
+    background-color: #450767;
+}
+.formulaire div.description{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.formulaire div.description label{
+    margin-bottom: 10px;
+}
+.formulaire div.description textarea{
+    border-radius: 5px;
+    background-color:#58058bd2 ;
+    color: #21fef3;
+}
+.bouton{
+    width: 100%;
+    padding: 15px;
+    border-radius: 25px;
+    border: 0;
+    outline: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.bouton:hover{
+    background-color: transparent;
+    border: 3px solid rgba(47, 165, 255, 0.925);
+    color: #21fef3;
+}
+audio{
+    margin: 10px;
+}
+audio::-webkit-media-controls-panel{
+    background-color: #4fb5ef6a;
+    
+}
 
 
 

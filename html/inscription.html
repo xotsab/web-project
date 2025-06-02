@@ -38,83 +38,88 @@
         Inscrivez-vous à notre news-letter, via le formulaire ci-dessous, pour
         ne rien rater des nouvelles actu yugioh!
       </p>
+      <div>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Quel est votre prénom?"
+          required
+          minlength="2"
+          maxlength="50"
+        />
+      </div>
+      <div>
+        <input
+          type="text"
+          name="Lastname"
+          id="Lastname"
+          placeholder="Quel est votre nom?"
+          required
+          minlength="2"
+          maxlength="50"
+        />
+      </div>
+      <div>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          required
+          placeholder="Quel est votre mot de passe?"
+          minlength="7"
+        />
+      </div>
+      <div>
+        <input
+          type="text"
+          name="email"
+          id="email"
+          placeholder="Quel est votre email?"
+          required
+          minlength="12"
+          maxlength="100"
+        />
+      </div>
+      <div>
+        <label for="date" id="datenaissance"
+          >Quelle est votre date de naissance?
+        </label>
+        <input type="date" name="age" id="age" required />
+      </div>
+      <div class="genre">
+        <label for="genre" class="question"
+          >De quelle genre vous décrirez vous ?</label
+        >
+        <input type="radio" name="genre" id="garcon" class="reponse" />
+        <label for="garcon" class="reponse">garçon</label>
+        <input type="radio" name="genre" id="fille" class="reponse" />
+        <label for="fille" class="reponse">fille</label>
+        <input type="radio" name="genre" id="non-binaire" class="reponse" />
+        <label for="non-binaire" class="reponse">non-binaire</label>
+        <input type="radio" name="genre" id="autre" class="reponse" />
+        <label for="autre" class="reponse">autre</label>
+      </div>
+      <div>
+        <label for="select">Quel est votre type de carte préféré? </label>
+        <select id="select">
+          <option value="1">magie</option>
+          <option value="2">piége</option>
+          <option value="3">monstre</option>
+        </select>
+      </div>
+      <div class="description">
+        <label for="textarea">Décrivez votre carte préférée :</label>
 
-      <form method="post" action="backend/traitement"></form>
-      <label for="name">votre prénom :</label>
-
-      <input
-        type="text"
-        name="name"
-        id="name"
-        placeholder="Quel est votre prénom?"
-        required
-        minlength="2"
-        maxlength="50"
-      />
-
-      <label for="Lastname">votre nom :</label>
-
-      <input
-        type="text"
-        name="Lastname"
-        id="Lastname"
-        placeholder="Quel est votre nom?"
-        required
-        minlength="2"
-        maxlength="50"
-      />
-
-      <label for="password">votre mot de passe</label>
-      <input
-        type="password"
-        name="password"
-        id="password"
-        required
-        placeholder="Quel est votre mot de passe?"
-        minlength="7"
-      />
-
-      <label for="email">votre email</label>
-      <input
-        type="text"
-        name="email"
-        id="email"
-        placeholder="Quel est votre email?"
-        required
-        minlength="12"
-        maxlength="100"
-      />
-
-      <label for="age">votre date de naissance</label>
-      <input type="date" name="age" id="age" required />
-
-      <input type="radio" name="genre" id="garcon" />
-      <label for="garcon">garçon</label>
-      <input type="radio" name="genre" id="fille" />
-      <label for="fille">fille</label>
-      <input type="radio" name="genre" id="non-binaire" />
-      <label for="non-binaire">non-binaire</label>
-      <input type="radio" name="genre" id="autre" />
-      <label for="autre">autre</label>
-
-      <label for="select">Quel est votre type de carte préféré? </label>
-      <select id="select">
-        <option value="1">magie</option>
-        <option value="2">piége</option>
-        <option value="3">monstre</option>
-      </select>
-
-      <label for="textarea">Décrivez votre carte préférée.</label>
-
-      <textarea
-        name="textarea"
-        id="textarea"
-        rows="4"
-        cols="50"
-        placeholder="Ma carte préférée est..."
-      ></textarea>
-
-      <button type="submit">je m'inscrit !</button>
+        <textarea
+          name="textarea"
+          id="textarea"
+          rows="4"
+          cols="20%"
+          placeholder="Ma carte préférée est..."
+        ></textarea>
+      </div>
+      <button type="submit" class="bouton">je m'inscrit !</button>
     </section>
     <footer>
       <a href="https://www.yugioh-card.com/eu/fr/lien" class="siteOff">
