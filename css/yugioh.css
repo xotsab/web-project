@@ -3,56 +3,252 @@
 
 
 body{
-    background-color:#ffad50;
+    grid-template-rows: auto 1fr auto;
     margin: 0%;
-    
-    
+    padding: 0%; 
 }
-img, audio{
-    max-width: 45%;
-    
+body{
+    background-image: url(../img/fond.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(2px);
+
 }
-header img{
-    
-    margin-left: 15%;
-    
-    max-width: 70%;
-    display: flex;
-    justify-content: right;
+p, footer a{
+    margin: 0 20%;
+}
+section{
+    text-align: center;
+}
+p,label,li{
+    font-size: 1.25em;
+}
+h2,h3,h4,footer a{
+    font-size: 1.4em;
+}
+h1{
+    font-size: 1.6em;
+ }
+
+p, li,label{
+    color: rgb(16, 255, 231);  
+    text-shadow: -1px -1px 0 #0b0176,1px -1px 0 #0b0176,-1px 1px 0 #0b0176,1px 1px 0 #0b0176;
+
+}
+textarea{
+    resize: none;
 }
 
+header img.logoyugioh{
+    
+    
+    opacity: 0.75;
+
+    padding-left:30%;
+    max-width: 40%;
+    min-width: 40%;
+    display: flex;
+    width: 100%;
+}
+img.tapis{
+    opacity: 0.9;
+}
+
+
 ul.menu {
-    padding-top: 2px;
-    padding-bottom: 2px;
+    
     display: flex;
     justify-content: space-around;
+    margin-top: 0;
+    background-color:#2c2cda2b;
+    border: 1px solid #4c494967;
+    padding: 20px;
     
-    background-color:#f3464667;
+    
 }
-ul.menu li{
+
+
+
+ul.menu li {
     display: inline-flex; 
 }
+
+
 h1,h2,h3,h4{
+    text-shadow: -1px -1px 0 #000000,1px -1px 0 #000000,-1px 1px 0 #000000,1px 1px 0 #000000;
     
-    color: #4F0341;
+    color: #21fef3;
+    font-weight: bolder;
+    
+    
 }
+div.magie h3{
+ color: #0aead3;
+}
+div.piege h3{
+    color: #f10bc7;
+
+}
+div.monstre h3{
+    color:#b66820 ;
+}
+
 div.carte_magie ,div.carte_piege,div.carte_monstre{
     display: flex;
     flex-direction: column;
     max-width: 45%;
     margin: 2%;
     min-width: 45%;
+   
+    
+   
 }
-div.magie, div.piege,div.monstre{
+
+div.magie, div.piege,div.monstre {
     display: flex;
     flex-wrap: wrap;
+     justify-content: center;
 }
+ 
 footer{
-   background-color: #fff29e;
+    position: relative;
+    border-top: 3px solid #595857;
+   background-color: #2d3dee91;
+
    padding: 10px;
-   
+}
+footer p{
+    color: #ffffff;
 }
 video{
     max-width: 60%;
-    min-width: 60%;
+    min-width: 60%;  
 }
+
+a.siteOff,a.p1,a.p2,a.p3,a.p4{
+    color: #a4d9ff;
+    font-weight:bold;
+    
+    
+}
+section.formulaire{
+    display:flex;
+    
+    flex-direction: column;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.formulaire div{
+    margin: 10px;
+}
+img, audio{
+    max-width: 45%;  
+}
+img.card, video{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+.menu-img{
+    display: none;
+}
+.menu li{
+    font-size: 1.5em;
+}
+
+section.formulaire{
+    background-color: #58058b43;
+    border-radius: 20px;
+    padding: 5%;
+    border: 3px solid #210098;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.formulaire p{
+    margin-bottom: 20px;
+}
+.formulaire div input,.formulaire div select,.formulaire div.description textarea{
+   width: 100%;
+    border-radius: 15px;
+    outline: none;
+    background-color: transparent;
+    border: 3px solid rgba(47, 165, 255, 0.925);
+     color: #21fef3;
+text-shadow: -1px -1px 0 #000000,1px -1px 0 #000000,-1px 1px 0 #000000,1px 1px 0 #000000;
+}
+.formulaire div input::placeholder,.formulaire div.description textarea::placeholder {
+    color: #21fef3;
+    text-shadow: -1px -1px 0 #000000,1px -1px 0 #000000,-1px 1px 0 #000000,1px 1px 0 #000000;
+}
+.formulaire div.genre{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.formulaire div.genre label.question{
+   
+   width: 100%;
+   margin-bottom: 10px;
+}
+.formulaire div.genre label.reponse{
+   
+   margin-right: 35%;
+   
+}
+.formulaire div.genre input.reponse{
+    width: 5%;
+    margin-left: 40%;
+    
+}
+
+.formulaire div select option{
+    background-color: #450767;
+}
+.formulaire div.description{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.formulaire div.description label{
+    margin-bottom: 10px;
+}
+.formulaire div.description textarea{
+    border-radius: 5px;
+    background-color:#58058bd2 ;
+    color: #21fef3;
+}
+.bouton{
+    width: 100%;
+    padding: 15px;
+    border-radius: 25px;
+    border: 0;
+    outline: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.bouton:hover{
+    background-color: transparent;
+    border: 3px solid rgba(47, 165, 255, 0.925);
+    color: #21fef3;
+}
+audio{
+    margin: 10px;
+}
+audio::-webkit-media-controls-panel{
+    background-color: #4fb5ef6a;
+    
+}
+
+
+
+
+
+
+
+    
+
+

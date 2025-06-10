@@ -1,16 +1,20 @@
-@media  screen and (max-width: 600px){
-    
-    ul.menu {
-        
-        display: flex;
-       flex-direction: column;
-        
-       
-    }
-    ul.menu li{
-        display: flex; 
-        margin-bottom: 5px;
-    }
+@media  screen and (max-width: 700px){
+
+    body{
+    background-image: url(../img/fond-mobile.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    backdrop-filter: blur(2px);
+
+}
+    header img.logoyugioh{
+        padding-top: 30px;
+    padding-left:5%;  
+}
+   
     img{
         max-width: 80%;
         
@@ -21,9 +25,11 @@
         max-width: 80%;
         margin-left: 10%;
         min-width: 80%;
+       
     }
     div.magie, div.piege,div.monstre{
         display: flex;
+         justify-content: center;
         
     }
     video{
@@ -33,7 +39,108 @@
         
         min-width: 70%;
     }
+    h1{
+        margin-top: 50px;
+    }
+    p,h1,h2,h3,h4,label{
+        font-size: 1.7em;
+       
+    
+    }
+    p{
+    margin: 0 7%;
+}
+    ul.menu {
+    
+    display: flex;
+    justify-content: space-around;
+    
+    background-color:rgba(240, 248, 255, 0);
+    border: 1px solid #4c494900;
+    
+    
+}
+
+
+    .navbar{
+    position: absolute;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    
+   
+    }
+    .navbar a {
+   color:rgb(186, 246, 255);
+    }
+   
+    .navbar .nav-links ul li {
+    margin:  25px 0;
+    font-size: 1.5em;
+    }
+    
+    .menu-img{
+        display: block;
+        min-width: 60px;
+        
+    }
+    .navbar .menu-img{
+        position: absolute;
+        top: 35px;
+        right: 35px;
+        width: 35px;
+    }
+    .nav-links ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-links{
+        position: absolute;
+        background-color: rgba(216, 251, 255, 0.137);
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(10px);
+        padding-bottom: 100%;
+        
+        margin-left: -100%;
+        transition: all 0.5s ease;
+    }
+    .mobile-menu{
+        
+        margin-left: 0;
+        
+    }.formulaire div.genre label.reponse{
+   
+   margin-left: 12%;
+   margin-right: 0%;
+   
+}.formulaire div.genre input.reponse{
+    width: 50%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+  
+    
+}
+
+
+  
+}
+    
+    
+
+  
+
+   
  
     
   
-}

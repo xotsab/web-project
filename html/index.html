@@ -13,15 +13,26 @@
 
   <body>
     <header>
-      <img src="../img/logo.png" alt="logo yugioh" />
+      <nav class="navbar">
+        <div class="nav-links">
+          <ul class="menu">
+            <li><a href="type_de_carte.html" class="p2">Type_de_carte</a></li>
+            <li><a href="tour.html" class="p3">Comment jouer ?</a></li>
+            <li><a href="inscription.html" class="p4">Contact</a></li>
+          </ul>
+        </div>
+        <img src="../img/menu.webp" alt="menu" class="menu-img" />
+      </nav>
+      <script>
+        const menuHamburger = document.querySelector(".menu-img");
+        const navLinks = document.querySelector(".nav-links");
+
+        menuHamburger.addEventListener("click", () => {
+          navLinks.classList.toggle("mobile-menu");
+        });
+      </script>
+      <img src="../img/logo.png" alt="logo yugioh" class="logoyugioh" />
     </header>
-    <nav>
-      <ul class="menu">
-        <li><a href="type_de_carte.html">types de cartes</a></li>
-        <li><a href="tour.html">comment jouer ?</a></li>
-        <li><a href="inscription.html">contact</a></li>
-      </ul>
-    </nav>
 
     <section>
       <h1>Les bases pour jouer à yugioh</h1>
@@ -35,37 +46,37 @@
             joueur, celui ci en pioche une de plus (exepté durant le premier
             tour du premier joueur). Pour en savoir plus sur le fonctionnement
             des tours consultez la section
-            <a href="tour.html">explication du tour de jeu</a>. Chaque joueur
-            possède au départ 8 000 points de vie et le but du jeu est de faire
-            descendre les points de vie de son adversaire à 0. Pour ce faire les
-            joueurs joue chacun leur tour leurs cartes sur le tapis de jeu.
+            <a href="tour.html " class="p3">explication du tour de jeu</a>.
+            Chaque joueur possède au départ 8 000 points de vie et le but du jeu
+            est de faire descendre les points de vie de son adversaire à 0. Pour
+            ce faire les joueurs joue chacun leur tour leurs cartes sur le tapis
+            de jeu.
           </p>
         </div>
         <div>
           <h2>Que faut-il pour jouer ?</h2>
           <p>
             Lors d’un duel Yu-Gi-Oh, chaque joueur possède un paquet de cartes
-            appelé le deck. Un deck se compose de 2 parties: <br />Le Main deck,
-            qui correspond aux cartes principales du joueur, ce sont les cartes
-            que les joueur vont pouvoir piocher. Il peut varier entre 40 et 60
-            cartes. <br />
-            L’Extra deck est un autre deck qui correspond à des personnages que
-            l’on va pouvoir invoquer sur le terrain de manière « spéciale ». Il
-            est limité à 15 cartes. Pour des informations sur les differents
-            types de cartes, consultez la section
-            <a href="type_de_carte.html">types de cartes</a>.
+            appelé le deck. Un deck se compose de 2 parties: Le Main deck, qui
+            correspond aux cartes principales du joueur, ce sont les cartes que
+            les joueur vont pouvoir piocher. Il peut varier entre 40 et 60
+            cartes. L’Extra deck est un autre deck qui correspond à des
+            personnages que l’on va pouvoir invoquer sur le terrain de manière «
+            spéciale ». Il est limité à 15 cartes. Pour des informations sur les
+            differents types de cartes, consultez la section
+            <a href="type_de_carte.html" class="p2">types de cartes</a>.
           </p>
         </div>
       </article>
       <aside>
         <h2>Le tapis de jeu</h2>
-        <img src="../img/tapis.webp" alt="tapis" width="600" />
+        <img src="../img/tapus.jpg" alt="tapis" width="600" class="tapis" />
         <div>
-          <h3>La zone "main deck "</h3>
+          <h3>La zone "main deck"</h3>
           <p>Il s'agit de la zone ou l'on place le deck principal.</p>
         </div>
         <div>
-          <h3>La zone "extra deck "</h3>
+          <h3>La zone "extra deck"</h3>
           <p>Il s'agit de la zone ou l'on place l'extra-deck.</p>
         </div>
         <div>
@@ -111,7 +122,9 @@
     </section>
     <footer>
       <br />
-      <a href="https://www.yugioh-card.com/eu/fr/lien"> site yugioh officiel</a>
+      <a href="https://www.yugioh-card.com/eu/fr/lien" class="siteOff">
+        site yugioh officiel</a
+      >
       <p>
         contact : <br />
         tel : 0499503412 <br />email: blabla@gmail.com
